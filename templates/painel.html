@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Painel do sistema</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+
+  <!-- topo simples do sistema -->
+  <div class="topo-painel">
+    <div class="logo-sistema">Painel Mercado Livre</div>
+    <div class="acoes-topo">
+      <a href="/painel">Painel</a>
+      <a href="/login">Sair</a>
+    </div>
+  </div>
+
+  <!-- conteúdo do painel -->
+  <div class="pagina-painel">
+    <div class="card-painel">
+      <h1>Bem-vindo ao painel</h1>
+      <p style="margin-top: 16px;">
+        Primeiro passo: conecte sua conta do Mercado Livre ao sistema.
+      </p>
+
+      <a href="/conectar_mercado_livre" class="botao-ml">
+        Conectar com Mercado Livre
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

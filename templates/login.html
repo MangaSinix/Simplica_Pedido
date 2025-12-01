@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login do sistema</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+  <div class="pagina-login">
+    <div class="caixa-login">
+
+      <h1>Login do sistema</h1>
+      <p class="texto-intro">
+        Faça o login para entrar no painel.
+      </p>
+
+      {% if erro %}
+        <p class="mensagem-erro">{{ erro }}</p>
+      {% endif %}
+
+      <form class="formulario-login" action="/login" method="POST">
+        <div class="grupo-campo">
+          <label for="email">email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="digite seu e-mail"
+            required
+          />
+        </div>
+
+        <div class="grupo-campo">
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="digite sua senha"
+            required
+          />
+        </div>
+
+        <button type="submit" class="botao-principal">
+          entrar
+        </button>
+        <div class="rodape-formulario">
+          <a href="#">esqueci minha senha</a> |
+          <a href="/registrar">não tenho cadastro</a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</body>
+</html>

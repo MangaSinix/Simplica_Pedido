@@ -1,0 +1,187 @@
+/* Foi usado apoio do CHATGPT para o CSS, atuei como DEV backend em PHP por 3 anos, por conta disso minha noção como front é bem basica */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+
+.pagina-login {
+  min-height: 100vh;              
+  display: flex;
+  align-items: center;            
+  justify-content: center;        
+  padding: 16px;
+}
+
+/* Caixa de login */
+.caixa-login {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  border: 1px solid #dddddd;
+}
+
+/* Texto de introdução */
+.texto-intro {
+  font-size: 13px;
+  color: #666666;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+/* Formulário */
+.formulario-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Grupo de campos (label + input) */
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.grupo-campo label {
+  font-size: 13px;
+  color: #555555;
+}
+
+.grupo-campo input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+}
+
+.grupo-campo input:focus {
+  outline: none;
+  border-color: #2196f3;  /* azul simples */
+}
+
+/* Botão principal */
+.botao-principal {
+  margin-top: 6px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.botao-principal:hover {
+  background-color: #1976d2;
+}
+
+/* Rodapé do formulário (link) */
+.rodape-formulario {
+  margin-top: 4px;
+  text-align: right;
+}
+
+.rodape-formulario a {
+  font-size: 12px;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.rodape-formulario a:hover {
+  text-decoration: underline;
+}
+
+.mensagem-erro {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.mensagem-sucesso {
+  color: #2e7d32;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+
+/* Responsivo para celular */
+@media (max-width: 480px) {
+  .caixa-login {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .texto-intro {
+    font-size: 12px;
+  }
+}
+/* TOPO DO PAINEL */
+.topo-painel {
+  background-color: #2196f3;
+  color: #ffffff;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-sistema {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.acoes-topo a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+.acoes-topo a:hover {
+  text-decoration: underline;
+}
+
+/* ÁREA PRINCIPAL DO PAINEL */
+.pagina-painel {
+  padding: 20px;
+}
+
+.card-painel {
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  padding: 20px;
+}
+
+/* BOTÃO "Conectar com Mercado Livre" */
+.botao-ml {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #ffeb3b; /* amarelo tipo Mercado Livre */
+  color: #333333;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid #f4c400;
+}
+
+.botao-ml:hover {
+  background-color: #fdd835;
+}
